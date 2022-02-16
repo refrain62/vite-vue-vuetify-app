@@ -1,4 +1,4 @@
-# Vue 3 + Vite + Vuetify3
+# Vue 3 + Vite + Vuetify3　＋Storybook
 
 ## vue-cliの準備
 ```
@@ -40,20 +40,25 @@ yarn dev
 ```
 
 
+「Welcome to the Vuetify 3 Alpha」のページに変わっていることを確認
+
+
+
 ## リポジトリに追加
 ```
 git init
-git add README.md
+git add *
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/refrain62/vite-vue-vuetify-app.git
 git push -u origin main
 ```
 
-
-「Welcome to the Vuetify 3 Alpha」のページに変わっていることを確認
-
-
+## Storybookの追加と起動
+```
+npx sb@next init --builder storybook-builder-vite
+yarn storybook
+```
 
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 

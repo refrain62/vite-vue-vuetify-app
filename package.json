@@ -6,7 +6,9 @@
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -16,14 +18,22 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@storybook/addon-actions": "^6.5.0-alpha.39",
+    "@storybook/addon-essentials": "^6.5.0-alpha.39",
+    "@storybook/addon-links": "^6.5.0-alpha.39",
+    "@storybook/vue3": "^6.5.0-alpha.39",
     "@vitejs/plugin-vue": "^2.2.0",
     "@vue/cli-plugin-babel": "5.0.0-beta.7",
     "@vue/cli-service": "5.0.0-beta.7",
     "@vuetify/vite-plugin": "^1.0.0-alpha.3",
+    "babel-loader": "^8.2.3",
     "sass": "^1.38.0",
     "sass-loader": "^10.0.0",
+    "storybook-builder-vite": "^0.1.15",
     "vite": "^2.8.0",
     "vue-cli-plugin-vuetify": "~2.4.5",
+    "vue-loader": "^16.8.3",
     "vuetify-loader": "^2.0.0-alpha.0"
   }
 }
