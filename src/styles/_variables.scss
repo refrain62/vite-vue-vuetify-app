@@ -1,2 +1,9 @@
 // Place SASS variable overrides here
 // $font-size-root: 18px;
+@use 'vuetify/styles' with (
+//  $color-pack: false,
+//  $utilities: false,
+$font-size-root: 24px,
+//$body-font-family: 'Libre Baskerville',
+$body-font-family: '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, YuGothic, "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif',
+);
